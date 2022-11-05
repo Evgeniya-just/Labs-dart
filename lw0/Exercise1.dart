@@ -1,19 +1,17 @@
 import "dart:io";
 
-void fizzbuzz(int a){
-  if (a%15==0){
+void fizzbuzz(int a) {
+  if (a % 15 == 0) {
     print("fizzbuzz");
-  }
-  else if(a%3==0){
+  } else if (a % 3 == 0) {
     print("fizz");
-  }
-  else if (a%5==0){
+  } else if (a % 5 == 0) {
     print("buzz");
-  }
-  else{
+  } else {
     print(a);
   }
 }
+
 void main() {
   int? n = int.parse(stdin.readLineSync()!);
   print("---------------------");
